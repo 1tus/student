@@ -38,3 +38,52 @@ fieldset{
     margin: 0 auto;
     padding: 0 20px;
 }
+.header{
+    background-color: #363a4e;
+    margin-bottom: 50px;
+}
+.header-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    &__menu{
+        display: flex;
+        flex-wrap: wrap;
+        width: 320px;
+        justify-content: space-between;
+    }
+    &__menu-link{
+        color: #ffffff;
+    }
+}
+.footer{
+    background-color: #f4f4f4;
+}
+.footer-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    &__menu{
+        display: flex;
+        flex-wrap: wrap;
+        width: 320px;
+        justify-content: space-between;
+    }
+    &__menu-link{
+        color: #808080;
+    }
+
+}
+.footer-contacts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.footer-contacts-link{
+    color: #808080;
+}

@@ -46,4 +46,58 @@ fieldset {
   padding: 0 20px;
 }
 
+.header {
+  background-color: #363a4e;
+  margin-bottom: 50px;
+}
+
+.header-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-navigation__menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  justify-content: space-between;
+}
+.header-navigation__menu-link {
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #f4f4f4;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.footer-navigation__menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  justify-content: space-between;
+}
+.footer-navigation__menu-link {
+  color: #808080;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-contacts-link {
+  color: #808080;
+}
+
 /*# sourceMappingURL=style.css.map */
