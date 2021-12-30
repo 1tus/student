@@ -11,6 +11,9 @@ html {
 body {
   margin: 0;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -69,6 +72,7 @@ fieldset {
 
 .footer {
   background-color: #f4f4f4;
+  margin-top: auto;
 }
 
 .footer-navigation {
@@ -93,7 +97,7 @@ fieldset {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .footer-contacts-link {
