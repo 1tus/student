@@ -8,14 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1tus/student.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/1tus/student/issues"
-  },
-  "homepage": "https://github.com/1tus/student#readme",
+  "homepage": "",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
