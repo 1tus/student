@@ -1,3 +1,5 @@
+@import "var";
+
 html{
     box-sizing: border-box;
 }
@@ -125,8 +127,18 @@ fieldset{
     color: #808080;
 }
 .page__maintitle{
-    display: block;
     padding-left: 125px;
+    padding-bottom: 20px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #808080;
+    }
 }
 .presentation__item{
     margin: 0 auto 40px;
@@ -199,6 +211,53 @@ fieldset{
     font-size: 60px;
     font-weight: 800;
 }
+.about-text{
+    margin: 0;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.about__item{
+    margin-bottom: 10px;
+}
+.about__item-title{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.about__item-list{
+    @include list;
+}
+.ourteachers__item{
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ourteachers__item-list{
+    display: flex;
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+}
+.ourteachers__item-img{
+    padding: 10px;
+    border: 1px solid #808080;
+}
+.ourteachers__item-container{
+    padding: 20px 10px;
+    width: 280px;
+}
+.ourteachers__item-title{
+    font-weight: 400;
+    color: #b20a32;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.ourteachers__item-text{
+    margin: 0;
+}
 .news__item{
     width: 700px;
     margin: 0 auto 40px;
@@ -259,6 +318,54 @@ fieldset{
     bottom: 5px;
     left: 20px;
     z-index: 1;
+}
+.practice-text{
+    color: #808080;
+}
+.practice-link{
+    color: #b20a32;
+    text-decoration: underline;
+}
+.practice__item-list{
+    color: #808080;
+    @include list;
+}
+.employment__page{
+    background-color: #cecece;
+}
+.employment-title-main{
+    color: #b20a32;
+    padding-bottom: 20px;
+    margin: 0;
+}
+.employment-link{
+    display: block;
+    color: #0000ff;
+}
+.employment__sites-title{
+    margin: 10px 0;
+}
+.emloyment__sites-link{
+    display: block;
+    color: #b20a32;
+    @include list;
+    text-decoration: underline;
+}
+.employment-title{
+    padding-left: 125px;
+    padding-bottom: 20px;
+}
+.employment__info-date{
+    display: block;
+    color: #b20a32;
+}
+.employment__info-title{
+    margin: 0;
+    font-weight: normal;
+}
+.employment__info-text{
+    margin: 0;
+    margin-bottom: 10px;
 }
 @media (max-width: 750px){
     .news__item{
