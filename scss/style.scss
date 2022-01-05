@@ -127,7 +127,7 @@ fieldset{
     color: #808080;
 }
 .page__maintitle{
-    padding-left: 125px;
+    text-align: center;
     padding-bottom: 20px;
     position: relative;
     &::after{
@@ -352,7 +352,7 @@ fieldset{
     text-decoration: underline;
 }
 .employment-title{
-    padding-left: 125px;
+    text-align: center;
     padding-bottom: 20px;
 }
 .employment__info-date{
@@ -366,6 +366,125 @@ fieldset{
 .employment__info-text{
     margin: 0;
     margin-bottom: 10px;
+}
+.form-body{
+    background-color: #ecdda4;
+}
+.form-container{
+    max-width: 700px;
+}
+.form-img{
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+.form-block{
+    margin: 0;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d3d3d3;
+}
+.form-blockfaculty, .form-blockmail, .form-blockname{
+    padding: 25px;
+}
+.form-blocktitle{
+    box-shadow: 0 -10px 1px #f1c100;
+}
+.form-label{
+    margin-bottom: 40px;
+    padding-right: 10px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "*";
+        top: 0;
+        right: 0;
+        color: #b20a32;
+    }
+}
+.form-title{
+    margin: 0;
+    padding-left: 25px;
+    padding-top: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.form-title-text{
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.form-maintext{
+    margin: 0;
+    color: #b20a32;
+    padding-left: 10px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "*";
+        top: 0;
+        left: 0;
+        color: #b20a32;
+    }
+}
+.form-labelmail{
+    width: 145px;
+}
+.form-labelname{
+    width: 50px;
+}
+.form-labelfaculty{
+    width: 85px;
+}
+.form-input{
+    width: 50%;
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.form-faculty{
+    border: 1px solid #d3d3d3;
+    border-radius: 7px;
+    padding: 10px 25px;
+    width: 50%;
+    color: #808080;
+}
+[data-selected] {
+    color: #000000;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+.form-button{
+    color: #a34444;
+}
+.form-send{
+    padding: 5px 25px;
+    background-color: #fffdfd;
+    border-radius: 7px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 1px 1px #61606080;
+}
+.form-clear{
+    background-color: transparent;
+    border: none;
+}
+.form-text{
+    font-size: 14px;
+    color: #808080;
+    margin: 0;
+    margin-bottom: 15px;
 }
 @media (max-width: 750px){
     .news__item{

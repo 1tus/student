@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Центр карьеры, практики и трудоустройства в университете имени Витте</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form-body">
+    <header></header>
+    <main>
+        <div class="container form-container">
+            <img class="form-img" src="images/form.jpeg" alt="form-img" width="650" height="160">
+            <form class="form" action="#" method="POST">
+                <div class="form-blocktitle form-block">
+                    <h1 class="form-title">
+                        Заявка на подбор места практики
+                    </h1>
+                    <p class="form-title-text">
+                        Дополнительно необходимо отправить свое резюме через Центр Поддержки
+                    </p>
+                    <p class="form-maintext">Обязательно</p>                
+                </div>
+                <div class="form-blockmail form-block">
+                    <label class="form-labelmail form-label" for="mail">Электронная почта</label>
+                    <input class="form-inputmail form-input" type="text" id="mail" placeholder="Ваш адрес эл. почты" name="user-email">                    
+                </div>
+                <div class="form-blockname form-block">
+                    <label class="form-labelname form-label" for="name">ФИО</label>
+                    <input class="form-inputname form-input" type="text" id="name" placeholder="Мой ответ" name="user-name">                    
+                </div>
+                <div class="form-blockfaculty form-block">
+                    <label class="form-labelfaculty form-label" for="faculty">Факультет</label>
+                    <select class="form-faculty" id="faculty" onchange="this.setAttribute('data-selected', true)">
+                        <option disabled selected>Выбрать</option>
+                        <option value="Management">Управления</option>
+                        <option value="Economics and Finance">Экономики и Финансов</option>
+                        <option value="Juridical">Юридический</option>
+                        <option value="Information technology">Информационных технологий</option>
+                      </select>                 
+                </div>
+                <div class="buttons-container">
+                    <button class="form-send form-button" type="submit">Отправить</button>
+                    <button class="form-clear form-button" type="reset">Очистить форму</button>
+                </div>
+            </form>
+            <p class="form-text">
+                Никогда не используйте формы Google для передачи паролей.
+            </p>
+        </div>
+    </main>  
+    <footer></footer>
+</body>
+</html>
